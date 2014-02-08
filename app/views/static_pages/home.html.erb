@@ -35,15 +35,15 @@
 	<div class="span9">
 		<div class=row>
 			<div class="span3">
-				<%= image_tag('custo.jpg')%>
+				<%= link_to image_tag('custo.jpg'), "#promo1", :data => {:toggle => "modal"}%>
 
 			</div>
 			<div class="span3">
-				<%= image_tag('pepejeans.jpg')%>
+				<%= link_to image_tag('pepejeans.jpg'), "#promo2", :data => {:toggle => "modal"}%>
 	
 			</div>
 			<div class="span3">
-				<%= image_tag('mango.jpg')%>
+				<%= link_to image_tag('mango.jpg'), "#promo3", :data => {:toggle => "modal"}%>
 
 			</div>
 		</div>
@@ -91,6 +91,80 @@
 		<div class="fb-like-box" data-href="https://www.facebook.com/OpticaliaVilaOlimpica" data-width="260" data-height="550" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="true" data-show-border="true"></div>
 	</div>
 </div>
+</div>
+
+<div id="promo1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Custo Barcelona</h3>
+  </div>
+  <div class="modal-body">
+
+	<div class="media">
+	  <a class="pull-left" href="#">
+	    <%= image_tag('custo.jpg') %>
+	  </a>
+	  <div class="media-body">
+		<h4 class="media-heading">Gafas Custo Barcelona por 79 Euros con cristales incluidos</h4>
+		<p>Ahora en Opticalia, sólo por 79 euros, te llevas unas gafas de la nueva colección de Custo Barcelona con cristales graduados incluidos. 
+Nuevos diseños, nuevas formas, nuevos colores... todas las tendencias de la próxima temporada ya han llegado a Opticalia. 
+Muchos modelos donde elegir. Lo que más te va a costar es decidirte por una. ¿Quieres verlas?</p>
+	  </div>
+	</div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true"><%= t :tancar %></button>
+  </div>
+</div>
+
+
+<div id="promo2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Pepe Jeans</h3>
+  </div>
+  <div class="modal-body">
+
+	<div class="media">
+	  <a class="pull-left" href="#">
+	    <%= image_tag('pepejeans.jpg') %>
+	  </a>
+	  <div class="media-body">
+		<h4 class="media-heading">Gafas Pepe Jeans por 79 Euros con cristales incluidos</h4>
+		<p>Ahora en Opticalia, sólo por 79 euros, te llevas unas gafas de la nueva colección de Pepe Jeans con cristales graduados incluidos. 
+Nuevos diseños, nuevas formas, nuevos colores... todas las tendencias de la próxima temporada ya han llegado a Opticalia. 
+Muchos modelos donde elegir. Lo que más te va a costar es decidirte por una. ¿Quieres verlas?</p>
+	  </div>
+	</div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true"><%= t :tancar %></button>
+  </div>
+</div>
+
+
+<div id="promo3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Mango</h3>
+  </div>
+  <div class="modal-body">
+
+	<div class="media">
+	  <a class="pull-left" href="#">
+	    <%= image_tag('mango.jpg') %>
+	  </a>
+	  <div class="media-body">
+		<h4 class="media-heading">Gafas Mango por 79 Euros con cristales incluidos</h4>
+		<p>Ahora en Opticalia, sólo por 79 euros, te llevas unas gafas de la nueva colección de Mango con cristales graduados incluidos. 
+Nuevos diseños, nuevas formas, nuevos colores... todas las tendencias de la próxima temporada ya han llegado a Opticalia. 
+Muchos modelos donde elegir. Lo que más te va a costar es decidirte por una. ¿Quieres verlas?</p>
+	  </div>
+	</div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true"><%= t :tancar %></button>
+  </div>
 </div>
 
 
