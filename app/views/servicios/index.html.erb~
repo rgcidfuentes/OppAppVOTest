@@ -18,4 +18,5 @@
     <p><%= servicio.description %></p>
   </div>
 </div>
+<hr>
 <% end %>>

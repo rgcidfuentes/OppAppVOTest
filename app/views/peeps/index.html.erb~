@@ -15,7 +15,7 @@
    <%= image_tag(peep.image_url.to_s, :class => "media-object") %>
   </a>
   <div class="media-body">
-    <h4 class="media-heading"><%= peep.name %></h4>
+    <h4 class="media-heading"><%= peep.carrec %></h4>
     <p><%= peep.description %></p>
   </div>
 </div>
