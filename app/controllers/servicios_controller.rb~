@@ -7,7 +7,7 @@ class ServiciosController < ApplicationController
   end
 
   def index
-	@servicio = Servicio.order(:name)
+	@servicios = Servicio.order(:name)
   end
 
   def create

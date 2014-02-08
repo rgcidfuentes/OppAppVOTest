@@ -18,6 +18,6 @@ class PeepsController < ApplicationController
   end
 
   def peep_params
-      params.require(:peep).permit(:name, :description, :image)
+      params.require(:peep).permit(:name, :description, :descriptionca :carrec :carrecca, :image)
   end
 end

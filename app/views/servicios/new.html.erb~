@@ -1,14 +1,20 @@
 <h1>Añadir una nueva instalacion</h1>
 
-<%= form_for @servicio, :html => {:multipart => true}, :url => servicios_path(@servicio) do |f| %>
+<%= form_for @servicio, :html => {:multipart => true} do |f| %>
   
   
-    <%= f.label :name %>
+    <%= f.label :name, "Instalación castellano" %>
     <%= f.text_field :name %>
   
-    <%= f.label :description %>
-    <%= f.text_field :description %>
+    <%= f.label :name, "Instal·lació català" %>
+    <%= f.text_field :nameca %>
+
+    <%= f.label :description,"Descripción castellano" %>
+    <%= f.text_area :description, size: '50x9' %>
  
+    <%= f.label :description, "Descripció català" %>
+    <%= f.text_area :descriptionca, size: '50x9' %>
+    <br>
     <%= f.file_field :image %>
   <%= f.submit %>
 <% end %>
