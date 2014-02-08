@@ -58,7 +58,7 @@ gem 'carrierwave'
 
 gem "rmagick"
 
-gem 'rambling-slider-rails'
+gem 'rails-i18n', '~> 4.0.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -1,4 +1,4 @@
-<% provide(:title, 'Consúltanos') %>
+<% provide(:title, (t :contact_title)) %>
 
 <div class=row>	
 	<div class="span12">
@@ -9,29 +9,29 @@
 <div class=row>	
 	<div class="span6">
 
-		<h1>Valoramos tu opinión</h1>
-		<p>Con este formulario, nos podrás desde solicitar información de algún modelo concreto hasta darnos alguna sugerencia para mejorar el servicio.<p>
+		<h1><%= t :contact_title %></h1>
+		<p><%= t :contact_intro %><p>
 
 
 		    <%= form_for @consulta  do |f| %>
 
-		      <%= f.label :nombre, "Nombre y Apellidos" %>
+		      <%= f.label :nombre, (t :contact_name) %>
 		      <%= f.text_field :name %>
 
-		      <%= f.label :email, "Dirección de e-mail" %>
+		      <%= f.label :email, (t :contact_email) %>
 		      <%= f.text_field( :email) %>
 
-		      <%= f.label :asunto %>
+		      <%= f.label :asunto, (t :contact_subject) %>
 		      <%= f.text_field :asunto %>
 
-		      <%= f.label :Mensaje %>
+		      <%= f.label :Mensaje, (t :contact_message) %>
 		      <%= f.text_area(:message, size: '50x9') %>
 		<br>
-		      <%= f.submit "Enviar Consulta", class: "btn btn-large btn-primary" %>
+		      <%= f.submit (t :contact_submit), class: "btn btn-large btn-primary" %>
 		    <% end %>
 
 	</div>
-	<div class="span4 offset2">
+	<div class="span5 offset1">
 	<h1>Encuéntranos en</h1>
 		<address>
 		  <strong>Opticalia Vila Olímpica</strong><br>

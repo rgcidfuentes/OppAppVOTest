@@ -1,12 +1,12 @@
-<% provide(:title, 'Equipo de Opticalia VO') %>
+<% provide(:title, (t :about_title)) %>
 
 <div class=row>	
 	<div class="span12">
 		<%= image_tag('panoramic3.jpg')%>
 	</div>
 </div>
-<h1>Equipo de Opticalia VO</h1>
-<p>En Opticalia VO disponemos del personal mejor cualificado para poder ofrecerte una atención personalizada y de calidad.</p>
+<h1><%= t :about_title %></h1>
+<p><%= t :about_intro %></p>
 
 <% @peeps.each do |peep| %>
 <h2><%= peep.name %></h2>
@@ -20,4 +20,4 @@
   </div>
 </div>
 <hr>
-<% end %>>
+<% end %>

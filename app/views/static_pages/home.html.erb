@@ -12,7 +12,7 @@
 <% end %>
 <% end %>
 
-<% provide(:title, 'Home') %>
+<% provide(:title, (t :home)) %>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -27,8 +27,6 @@
 		<%= image_tag('panoramic3.jpg')%>
 	</div>
 </div>
-
-
 
 <div class=row>
 
@@ -52,14 +50,14 @@
 		<div class=row>
 			<div class="span5">
 				<div class="hero-unit">
-					<h3>Déjanos aconsejarte</h3>
-					<p>En Opticalia VO tienes los mejores profesionales a tu disposición. Recibe asistencia en Salud, Moda y Tendencias</p>
+					<h3><%= t :consejo %></h3>
+					<p><%= t :consejo_body %></p>
 				</div>
 			</div>
 			<div class="span4">
 				<div class="hero-unit">
-					<h3>Test Online</h3>
-					<p>¿Consideras que has perdido audición o visión? Compruébalo con nuestro test online</p>
+					<h3><%= t :test %></h3>
+					<p><%= t :test_body %></p>
 				</div>
 			</div>
 		</div>
@@ -71,7 +69,7 @@
 				   <%= image_tag(mapCat(41.3911319, 2.197063), :class => "media-object") %>
 				  </a>
 				  <div class="media-body">
-				    <h4 class="media-heading">Encuéntranos en:</h4><br><br>
+				    <h4 class="media-heading"><%= t :find_us %></h4><br><br>
 				    <address>
 					  <strong>Opticalia Vila Olímpica</strong><br>
 					  Av. Icària 162,<br>

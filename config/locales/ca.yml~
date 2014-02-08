@@ -1,0 +1,52 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+ca:
+  hello: "Hola món"
+  home: "Inici"
+  services: "Les nostres instal·lacions"
+  about: "Conèixe'ns"
+  contact: "Contacte"
+
+  consejo: "Deixa'ns acosellar-te"
+  test: "Test online"
+
+  consejo_body: "A Opticalia VO tens els teus millors professionals a la teva disposició. Rep assistencia en Salut, Moda y Tendències"
+  test_body: "¿Creus que has perdut visió o audició? Comprova-ho amb el nostre test online"
+  find_us: "Troba'ns a:" 
+  ayudanos: "Ajuda'ns a millorar"
+  follow_us_on: "Segueix-nos a"
+  privacy: "Privacitat"
+
+  services_intro: "A Opticalia VO oferim els següents serveis:"  
+  about_intro: "A Opticalia VO disposem del personal millor qualificat per a poder oferir-te una atenció personalitzada y de qualitat."
+
+  contact_title: "Valorem la teva opinió"
+  contact_intro: "Omple aquest formulari per tal de sol·licitar informació o donar-nos alguna suggerència per a millorar el servei."
+
+  contact_name: "Nom i Cognoms"
+  contact_email: "Adreça de e-mail"
+  contact_subject: "Assumpte"
+  contact_message: "Missatge"
+  contact_submit: "Enviar Consulta"
+
+
+

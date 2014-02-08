@@ -47,6 +47,8 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'route_translator', :github => "enriclluelles/route_translator"
+
 #gem 'bootstrap-sass', '2.3.2.0'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'font-awesome-sass'
@@ -58,6 +60,7 @@ gem 'carrierwave'
 
 gem "rmagick"
 
+gem 'rails-i18n', '~> 4.0.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

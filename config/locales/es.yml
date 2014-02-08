@@ -1,0 +1,54 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+  hello: "Hola mundo"
+  home: "Inicio"
+  services: "Nuestras instalaciones"
+  about: "Conócenos"
+  contact: "Contacto"
+
+  consejo: "Déjanos aconsejarte"
+  test: "Test online"
+
+  consejo_body: "En Opticalia VO tienes los mejores profesionales a tu disposición. Recibe asistencia en Salud, Moda y Tendencias"
+  test_body: "¿Consideras que has perdido audición o visión? Compruébalo con nuestro test online"
+  find_us: "Encuéntrenos en:" 
+  ayudanos: "Ayúdanos a mejorar"
+  follow_us_on: "Síguenos en"
+  privacy: "Privacidad"
+
+  services_intro: "En Opticalia VO ofrecemos los siguientes servicios:" 
+
+  about_title: "Equipo de Opticalia VO" 
+  about_intro: "En Opticalia VO disponemos del personal mejor cualificado para poder ofrecerte una atención personalizada y de calidad."
+
+  contact_title: "Valoramos tu opinión"
+  contact_intro: "Con este formulario, nos podrás desde solicitar información de algún modelo concreto hasta darnos alguna sugerencia para mejorar el servicio."
+
+  contact_name: "Nombre y Apellidos"
+  contact_email: "Dirección de e-mail"
+  contact_subject: "Asunto"
+  contact_message: "Mensaje"
+  contact_submit: "Enviar Consulta"
+
+
+
