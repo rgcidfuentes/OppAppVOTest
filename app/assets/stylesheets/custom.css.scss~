@@ -34,19 +34,14 @@ body { padding-top: 70px; }
 	}
 }
 
-.hovercolor{
-	a{hover {
-		color: #000;
-	}}
-}
-
-.navbar.nav.li.a:hover {
- color: #000;
-}
 
 .navbar-inner{
 	padding:00px;
 	background-color:#FFF;
+}
+
+a.yeah:hover{
+ color: #777 !important;
 }
 
 /*footer*/
