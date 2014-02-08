@@ -23,20 +23,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   #
   #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
   # end
-	process :resize_add_blank => [400,400]
-	def resize_add_blank(width,height)
-		manipulate! do |img|
-   			img.resize "#{width}x#{height}>"
-			img = yield(img) if block_given?
-	    		target = Magick::Image.new(400, 400) do
-			  self.background_color = 'white'
-			end
-			target.composite(img, Magick::CenterGravity, 		Magick::CopyCompositeOp)			
-			target
-		end
-	end
-
-  #   process :resize_to_limit => [400, 400] Worked Till now!!!
+   process :resize_to_limit => [400, 400]
   # Process files as they are uploaded:
   # process :scale => [200, 300]
   #
