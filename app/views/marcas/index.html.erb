@@ -1,0 +1,21 @@
+<% provide(:title, (t :marcas)) %>
+
+<div class=row>	
+	<div class="span12">
+		<%= image_tag('panoramic3.jpg')%>
+	</div>
+</div>
+
+<h1><%= t :marcas %></h1>
+<p><%= t :marcas_intro %></p>
+
+<div class=row>	
+	<ul class="thumbnails">
+  
+<% @marcas.each do |marca| %>
+	<li class="span3">
+		<%= image_tag(marca.image)%>
+	</li>
+<% end %>
+</ul>
+</div>

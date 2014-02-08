@@ -1,5 +1,8 @@
 OpticaliaVO::Application.routes.draw do
 
+  get "marcas/index"
+  get "marcas/new"
+  localized do
 	  resources :servicios 
 	  resources :consultas
 	  resources :peeps
@@ -12,7 +15,7 @@ OpticaliaVO::Application.routes.draw do
 	  match '/privacidad', to: 'static_pages#privacidad', via: 'get'
 	  match '/signin',  to: 'sessions#new',         via: 'get'
 	  match '/signout', to: 'sessions#destroy',     via: 'delete'
-
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

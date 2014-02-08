@@ -36,7 +36,9 @@ es:
   follow_us_on: "Síguenos en"
   privacy: "Privacidad"
 
-  services_intro: "En Opticalia VO ofrecemos los siguientes servicios:"  
+  services_intro: "En Opticalia VO ofrecemos los siguientes servicios:" 
+
+  about_title: "Equipo de Opticalia VO" 
   about_intro: "En Opticalia VO disponemos del personal mejor cualificado para poder ofrecerte una atención personalizada y de calidad."
 
   contact_title: "Valoramos tu opinión"
@@ -46,7 +48,9 @@ es:
   contact_email: "Dirección de e-mail"
   contact_subject: "Asunto"
   contact_message: "Mensaje"
-  contact_submit: "Enviar Consulta"
+  contact_submit: "Enviar consulta"
 
+  marcas: "Nuestras marcas"
+  marcas_intro: " "
 
 

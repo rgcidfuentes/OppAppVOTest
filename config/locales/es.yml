@@ -22,7 +22,7 @@
 es:
   hello: "Hola mundo"
   home: "Inicio"
-  services: "Nuestras instalaciones"
+  services: "Instalaciones"
   about: "Conócenos"
   contact: "Contacto"
 
@@ -36,6 +36,7 @@ es:
   follow_us_on: "Síguenos en"
   privacy: "Privacidad"
 
+  services_title: "Nuestras instalaciones"
   services_intro: "En Opticalia VO ofrecemos los siguientes servicios:" 
 
   about_title: "Equipo de Opticalia VO" 
@@ -48,7 +49,10 @@ es:
   contact_email: "Dirección de e-mail"
   contact_subject: "Asunto"
   contact_message: "Mensaje"
-  contact_submit: "Enviar Consulta"
+  contact_submit: "Enviar consulta"
 
+  marcas: "Marcas"
+  marcas_title: "Nuestras marcas"
+  marcas_intro: " "
 
 

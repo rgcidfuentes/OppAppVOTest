@@ -37,6 +37,8 @@ ca:
   privacy: "Privacitat"
 
   services_intro: "A Opticalia VO oferim els següents serveis:"  
+
+  about_title: "Equip d'Opticalia VO"
   about_intro: "A Opticalia VO disposem del personal millor qualificat per a poder oferir-te una atenció personalitzada y de qualitat."
 
   contact_title: "Valorem la teva opinió"
@@ -48,5 +50,8 @@ ca:
   contact_message: "Missatge"
   contact_submit: "Enviar Consulta"
 
+  marcas: "Marcas"
+  marcas: "Les nostres marques"
+  marcas_intro: " "
 
 

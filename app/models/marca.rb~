@@ -1,3 +1,2 @@
 class Marca < ActiveRecord::Base
-	validates :name, presence: true
 end

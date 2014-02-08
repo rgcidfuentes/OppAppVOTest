@@ -1,0 +1,11 @@
+<h1>Añadir una nueva marca</h1>
+
+<%= form_for @marca, :html => {:multipart => true} do |f| %>
+
+    <%= f.label :name, "Marca" %>
+    <%= f.text_field :name %>
+     <br>
+    <%= f.file_field :image %>
+    <br>
+  <%= f.submit %>
+<% end %>

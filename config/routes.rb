@@ -5,6 +5,7 @@ OpticaliaVO::Application.routes.draw do
 	  resources :consultas
 	  resources :peeps
 	  resources :sessions, only: [:new, :create, :destroy]
+	  resources :marcas
 	  root 'static_pages#home'
 	#  match '/', to: 'static_pages#home', via: 'get'
 	  match '/acerca',   to: 'peeps#index',   via: 'get'

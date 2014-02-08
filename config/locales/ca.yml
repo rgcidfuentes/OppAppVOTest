@@ -22,7 +22,7 @@
 ca:
   hello: "Hola món"
   home: "Inici"
-  services: "Les nostres instal·lacions"
+  services: "Instal·lacions"
   about: "Conèixe'ns"
   contact: "Contacte"
 
@@ -36,6 +36,7 @@ ca:
   follow_us_on: "Segueix-nos a"
   privacy: "Privacitat"
 
+  services_title: "Les nostres instal·lacions"
   services_intro: "A Opticalia VO oferim els següents serveis:"  
 
   about_title: "Equip d'Opticalia VO"
@@ -50,5 +51,8 @@ ca:
   contact_message: "Missatge"
   contact_submit: "Enviar Consulta"
 
+  marcas: "Marques"
+  marcas_title: "Les nostres marques"
+  marcas_intro: " "
 
 

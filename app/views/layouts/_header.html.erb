@@ -4,10 +4,11 @@
       <%= link_to image_tag("logo.png"), root_path, class: "brand" %>
       <nav>
         <ul class="nav pull-right padded">
-          <li><%= link_to (t :home),    root_path, :class=>"yeah" %></li>
-          <li><%= link_to (t :services), servicios_path, :class=>"yeah" %></li>
-          <li><%= link_to (t :about), acerca_path, :class=>"yeah" %></li>
-          <li><%= link_to (t :contact), contacto_path, :class=>"yeah" %></li>
+          <li><%= link_to (t :home),    root_path %></li>
+          <li><%= link_to (t :marcas), marcas_path %></li>
+	  <li><%= link_to (t :services), servicios_path %></li>
+          <li><%= link_to (t :about), acerca_path %></li>
+          <li><%= link_to (t :contact), contacto_path %></li>
           <li class="dropdown">
           <a href="#" class="dropdown-toggle yeah" data-toggle="dropdown">Idioma<b class="caret"></b></a>
           <ul class="dropdown-menu">

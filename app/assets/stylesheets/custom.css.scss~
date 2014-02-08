@@ -9,7 +9,7 @@
 
 
 // Bootstrap body padding for fixed navbar
-body { padding-top: 70px; }
+body { padding-top: 65px; }
 
 // Responsive styles go here in case you want them
 @import "bootstrap-responsive";
@@ -24,13 +24,23 @@ body { padding-top: 70px; }
 /*header*/
 
 .padded{
-	padding-top:28px;
+/*	padding-top:28px;*/
 }
 
 .navbar{
 	.brand{
 		padding-top:0px;
-		padding-bottom:3px;
+		padding-bottom:0px;
+	}
+	.nav{
+		li{
+			a{
+				padding: 43px 10px 0px;
+			}
+			a:hover{
+				color: #666
+			}
+		}
 	}
 }
 
@@ -40,9 +50,7 @@ body { padding-top: 70px; }
 	background-color:#FFF;
 }
 
-a.yeah:hover{
- color: #777 !important;
-}
+
 
 /*footer*/
 footer {
