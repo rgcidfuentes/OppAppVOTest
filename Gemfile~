@@ -58,7 +58,7 @@ gem 'bootstrap-datetimepicker-rails'
 gem 'bootswatch-rails'
 gem 'carrierwave'
 
-gem "rmagick"
+gem "rmagick", :require => 'RMagick'
 
 gem 'rails-i18n', '~> 4.0.0'
 
