@@ -1,0 +1,18 @@
+<h1>Añadir un nuevo miembro de Opticalia VO</h1>
+
+<%= form_for @peep, :html => {:multipart => true} do |f| %>
+  
+  
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+ 
+    <%= f.label :carrec %>
+    <%= f.text_field :carrec %>
+
+    <%= f.file_field :image %>
+    <br>
+    <%= f.submit %>
+<% end %>

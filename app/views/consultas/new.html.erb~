@@ -1,0 +1,22 @@
+<% provide(:title, 'ADMIN: new consulta') %>
+<h1>Valoramos tu opinión</h1>
+<p>Con este formulario, nos podrás desde solicitar información de algún modelo concreto hasta darnos alguna sugerencia para mejorar el servicio.<p>
+
+
+    <%= form_for @consulta, :url => consultas_path(@consulta)  do |f| %>
+
+      <%= f.label :nombre, "Nombre y Apellidos" %>
+      <%= f.text_field :name %>
+
+      <%= f.label :email, "Dirección de e-mail" %>
+      <%= f.text_field( :email) %>
+
+      <%= f.label :asunto %>
+      <%= f.text_field :asunto %>
+
+      <%= f.label :Mensaje %>
+      <%= f.text_area(:message, size: '50x9') %>
+<br>
+      <%= f.submit "Enviar Consulta", class: "btn btn-large btn-primary" %>
+    <% end %>
+

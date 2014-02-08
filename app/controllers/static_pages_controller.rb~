@@ -1,0 +1,18 @@
+class StaticPagesController < ApplicationController
+  def home
+	flash[:notice_bootstrap] = "Post successfully created"
+  end
+
+  def about
+  end
+
+  def servicios
+  end
+
+  def aviso
+  end
+
+  def privacidad
+  end
+
+end

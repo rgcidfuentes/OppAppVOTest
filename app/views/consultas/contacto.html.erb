@@ -1,0 +1,24 @@
+<% provide(:title, 'ADMIN: new consulta') %>
+<h1>New consulta</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@consulta) do |f| %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :asunto %>
+      <%= f.text_field :asunto %>
+
+      <%= f.label :message %>
+      <%= f.text_field :message %>
+
+      <%= f.submit "Send Consulta", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
+

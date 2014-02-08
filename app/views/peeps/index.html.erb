@@ -1,0 +1,23 @@
+<% provide(:title, 'Equipo de Opticalia VO') %>
+
+<div class=row>	
+	<div class="span12">
+		<%= image_tag('panoramic3.jpg')%>
+	</div>
+</div>
+<h1>Equipo de Opticalia VO</h1>
+<p>En Opticalia VO disponemos del personal mejor cualificado para poder ofrecerte una atención personalizada y de calidad.</p>
+
+<% @peeps.each do |peep| %>
+<h2><%= peep.name %></h2>
+<div class="media">
+  <a class="pull-left" href="#">
+   <%= image_tag(peep.image_url.to_s, :class => "media-object") %>
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading"><%= peep.carrec %></h4>
+    <p><%= peep.description %></p>
+  </div>
+</div>
+<hr>
+<% end %>>

@@ -8,12 +8,10 @@ class StaticPagesController < ApplicationController
   def servicios
   end
 
-  def contacto
-  end
-
   def aviso
   end
 
   def privacidad
   end
+
 end

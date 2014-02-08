@@ -1,0 +1,78 @@
+// Example using 'Cerulean' bootswatch
+//
+// First import journal variables
+@import "bootswatch/journal/variables";
+
+// Then bootstrap itself
+@import "bootstrap";
+
+
+
+// Bootstrap body padding for fixed navbar
+body { padding-top: 70px; }
+
+// Responsive styles go here in case you want them
+@import "bootstrap-responsive";
+
+// And finally bootswatch style itself
+@import "bootswatch/journal/bootswatch";
+
+// Whatever application styles you have go last
+@import "font-awesome";
+@import 'bootstrap-datetimepicker';
+
+/*header*/
+
+.padded{
+	padding-top:28px;
+}
+
+.navbar{
+	.brand{
+		padding-top:0px;
+		padding-bottom:3px;
+	}
+}
+
+.navbar-inner{
+	padding:00px;
+	background-color:#FFF;
+}
+
+/*footer*/
+footer {
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+
+/*blocks with border and background*/
+.bground{
+	padding: 0px;
+	background-color:#FFF;
+	border-style:solid;
+	border-width:1px;
+	border-color:#FFF;
+}
+
+.headstyle{
+	background-color:#FFF;
+	/*padding: 3px;
+	border-style:solid;
+	border-width:3px;
+	border-color:#999;*/
+}
+
+.row{
+	padding-bottom:5px;
+}
+
+input, textarea{
+	width:600px;
+}
+

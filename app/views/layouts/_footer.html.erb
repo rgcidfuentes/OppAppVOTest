@@ -1,0 +1,14 @@
+<footer class="footer">
+  <div style="float:left">
+   <%= Time.new.year %> <%= link_to '<i class="fa fa-home"></i>'.html_safe + " Opticalia VO", root_path %>
+  </div>
+  <nav>
+    <ul>
+      <li><%= link_to (t :privacidad),   '#' %></li>
+      <li><%= link_to (t :contacto), contacto_path %></li>
+      <li><%= link_to (t :ayúdanos_a_mejorar), '#' %></li> 
+	  <li><%= link_to '<i class="fa fa-facebook-square">'.html_safe, "http://www.facebook.com/opticaliaVO" %></i>
+	      <%= link_to '<i class="fa fa-twitter-square">'.html_safe, "http://www.twitter.com/opticaliaVO" %></i> </li>
+    </ul>
+  </nav>
+</footer>

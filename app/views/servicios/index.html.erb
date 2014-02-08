@@ -1,0 +1,22 @@
+<% provide(:title, 'Nuestras Instalaciones') %>
+
+<div class=row>	
+	<div class="span12">
+		<%= image_tag('panoramic3.jpg')%>
+	</div>
+</div>
+<h1>Nuestras instalaciones</h1>
+<p>En Opticalia VO ofrecemos los siguientes servicios:</p>
+
+<% @servicios.each do |servicio| %>
+<div class="media">
+  <a class="pull-left" href="#">
+   <%= image_tag(servicio.image_url.to_s, :class => "media-object") %>
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading"><%= servicio.name %></h4>
+    <p><%= servicio.description %></p>
+  </div>
+</div>
+<hr>
+<% end %>>

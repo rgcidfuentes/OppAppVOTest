@@ -1,10 +1,17 @@
 OpticaliaVO::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/about"
-  get "static_pages/servicios"
-  get "static_pages/contacto"
-  get "static_pages/aviso"
-  get "static_pages/privacidad"
+  
+  resources :servicios 
+  resources :consultas
+  resources :peeps
+  resources :sessions, only: [:new, :create, :destroy]
+  root 'static_pages#home'
+#  match '/', to: 'static_pages#home', via: 'get'
+  match '/acerca',   to: 'peeps#index',   via: 'get'
+  match '/contacto', to: 'consultas#new', via: 'get'
+  match '/aviso',   to: 'static_pages#aviso',   via: 'get'
+  match '/privacidad', to: 'static_pages#privacidad', via: 'get'
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
