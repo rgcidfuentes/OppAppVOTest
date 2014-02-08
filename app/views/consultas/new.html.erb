@@ -1,22 +1,46 @@
-<% provide(:title, 'ADMIN: new consulta') %>
-<h1>Valoramos tu opinión</h1>
-<p>Con este formulario, nos podrás desde solicitar información de algún modelo concreto hasta darnos alguna sugerencia para mejorar el servicio.<p>
+<% provide(:title, 'Consúltanos') %>
+
+<div class=row>	
+	<div class="span12">
+		<%= image_tag('panoramic3.jpg')%>
+	</div>
+</div>
+
+<div class=row>	
+	<div class="span6">
+
+		<h1>Valoramos tu opinión</h1>
+		<p>Con este formulario, nos podrás desde solicitar información de algún modelo concreto hasta darnos alguna sugerencia para mejorar el servicio.<p>
 
 
-    <%= form_for @consulta  do |f| %>
+		    <%= form_for @consulta  do |f| %>
 
-      <%= f.label :nombre, "Nombre y Apellidos" %>
-      <%= f.text_field :name %>
+		      <%= f.label :nombre, "Nombre y Apellidos" %>
+		      <%= f.text_field :name %>
 
-      <%= f.label :email, "Dirección de e-mail" %>
-      <%= f.text_field( :email) %>
+		      <%= f.label :email, "Dirección de e-mail" %>
+		      <%= f.text_field( :email) %>
 
-      <%= f.label :asunto %>
-      <%= f.text_field :asunto %>
+		      <%= f.label :asunto %>
+		      <%= f.text_field :asunto %>
 
-      <%= f.label :Mensaje %>
-      <%= f.text_area(:message, size: '50x9') %>
-<br>
-      <%= f.submit "Enviar Consulta", class: "btn btn-large btn-primary" %>
-    <% end %>
+		      <%= f.label :Mensaje %>
+		      <%= f.text_area(:message, size: '50x9') %>
+		<br>
+		      <%= f.submit "Enviar Consulta", class: "btn btn-large btn-primary" %>
+		    <% end %>
 
+	</div>
+	<div class="span5 offset1">
+	<h1>Encuéntranos en</h1>
+		<address>
+		  <strong>Opticalia Vila Olímpica</strong><br>
+		  Av. Icària 162,<br>
+		  08005, Barcelona<br>
+		  <i class="fa fa-phone-square"> 932219388 / 672094714</i>
+		</address>
+
+<%= image_tag(mapCat2(41.3911319, 2.197063)) %>
+
+	</div>
+</div>

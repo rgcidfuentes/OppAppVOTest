@@ -28,17 +28,6 @@
 	</div>
 </div>
 
-/* <div class=row>	
-	<div class="slider-wrapper theme-default">
-	<div class="ribbon"></div>
-		<div id="slider" class="ramblingSlider">
-			<%= # image_tag "foto3.jpg", :alt => "image1" %>
-			<%= # image_tag "panoramic3.jpg", :alt => "image2" %>
-
-
-		</div>
-	</div></div>
-</div> */
 
 
 <div class=row>
@@ -70,7 +59,7 @@
 			<div class="span4">
 				<div class="hero-unit">
 					<h3>Test Online</h3>
-					<p>¿Considera que ha perdido audición o vista? Compruébelo con nuestro test online.</p>
+					<p>¿Consideras que has perdido audición o visión? Compruébalo con nuestro test online.</p>
 				</div>
 			</div>
 		</div>
