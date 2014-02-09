@@ -19,7 +19,7 @@
 		<h4 class="media-heading"><%= peep.carrecca %></h4>
 		<p><%= peep.descriptionca %></p>
 	  <% else%>
-		<h4 class="media-heading"><%= peep.carrecca %></h4>
+		<h4 class="media-heading"><%= peep.carrec %></h4>
 		<p><%= peep.description %></p>
 	  <% end %>
 

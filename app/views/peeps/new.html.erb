@@ -1,5 +1,6 @@
 <h1>Añadir un nuevo miembro de Opticalia VO</h1>
 
+
 <%= form_for @peep, :html => {:multipart => true} do |f| %>
   
   
@@ -21,8 +22,26 @@
 
 
 <br>
-    <%= f.label :name, "URL Imagen" %>
-    <%= f.text_field :image %>
+     <%= cl_image_upload_tag(:image_id,
+                        :tags => "directly_uploaded",
+                        :crop => :limit, :width => 400, :height => 400,
+                       ) %>
     <br>
     <%= f.submit %>
 <% end %>
+
+<span class="label label-success"></span>
+
+<script>
+$(document).ready(function() { 
+$('.cloudinary-fileupload').bind('cloudinarydone', function(e, data) {  
+	
+ $(".label-success").text("Fichero cargado con éxito");
+  return true;
+});
+
+$('.cloudinary-fileupload').bind('fileuploadchange', function() { $(this).hide()});
+
+});
+
+</script>

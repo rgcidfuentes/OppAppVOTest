@@ -12,7 +12,7 @@
 <h2><%= peep.name %></h2>
 <div class="media">
   <a class="pull-left" href="#">
-   <%= image_tag(peep.image_url.to_s, :class => "media-object") %>
+   <%= cl_image_tag(peep.image_url.to_s, :class => "media-object") %>
   </a>
   <div class="media-body">
 	  <% if I18n.locale.to_s == "ca" %>

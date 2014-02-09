@@ -1,5 +1,6 @@
 <h1>Añadir una nueva instalacion</h1>
 
+
 <%= form_for @servicio, :html => {:multipart => true} do |f| %>
   
   
@@ -18,8 +19,6 @@
      <%= cl_image_upload_tag(:image_id,
                         :tags => "directly_uploaded",
                         :crop => :limit, :width => 400, :height => 400,
-                        :eager => [{ :crop => :fill, :width => 150, :height => 100 }],
-                        :html => { :style => "margin-top: 30px" }  
                        ) %>
 
     <br>

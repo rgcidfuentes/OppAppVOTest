@@ -1,13 +1,15 @@
 <h1>Añadir una nueva marca</h1>
 
-<%= cloudinary_js_config %>
 
 <%= form_for @marca, :html => {:multipart => true} do |f| %>
 
     <%= f.label :name, "Marca" %>
     <%= f.text_field :name %>
      <br>
-   <%= cl_image_upload_tag(:image_id) %>
+ <%= cl_image_upload_tag(:image_id,
+                        :tags => "directly_uploaded",
+                        :crop => :limit, :width => 400, :height => 400,
+                       ) %>
     <br>
   <%= f.submit %>
 <% end %>

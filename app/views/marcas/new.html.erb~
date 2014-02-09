@@ -1,6 +1,5 @@
 <h1>Añadir una nueva marca</h1>
 
-<%= cloudinary_js_config %>
 
 <%= form_for @marca, :html => {:multipart => true} do |f| %>
 
@@ -11,7 +10,7 @@
     <br>
   <%= f.submit %>
 <% end %>
-<span class="label label-success strong"></span>
+<span class="label label-success"></span>
 
 <script>
 $(document).ready(function() { 
