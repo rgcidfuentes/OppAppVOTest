@@ -12,6 +12,12 @@ class ServiciosController < ApplicationController
 
   def create
     @servicio = Servicio.new(servicio_params)
+	if params[:image_id].present?
+	  preloaded = Cloudinary::PreloadedFile.new(params[:image_id])
+	     # Verify signature by calling preloaded.valid?
+	  @servicio.image = preloaded.identifier
+	end
+
     if @servicio.save
       flash[:notice_bootstrap] = "Successfully created servicio."
       redirect_to root_path
@@ -21,7 +27,7 @@ class ServiciosController < ApplicationController
   end
 
     def servicio_params
-      params.require(:servicio).permit(:name, :nameca, :description, :descriptionca, :image)
+      params.require(:servicio).permit(:name, :nameca, :description, :descriptionca)
     end
 
 end

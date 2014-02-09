@@ -1,0 +1,12 @@
+development:
+  cloud_name: ENV["CL_NAME"]
+  api_key: ENV["CL_KEY"]
+  api_secret: TkCtZzEpqXdz3DSnlBlh9xuKff0
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dxnulgyaf
+  api_key: '189312738312437'
+  api_secret: TkCtZzEpqXdz3DSnlBlh9xuKff0
+  enhance_image_tag: true
+  static_image_support: true

@@ -1,2 +1,28 @@
-<h1>Marcas#new</h1>
-<p>Find me in app/views/marcas/new.html.erb</p>
+<h1>Añadir una nueva marca</h1>
+
+<%= cloudinary_js_config %>
+
+<%= form_for @marca, :html => {:multipart => true} do |f| %>
+
+    <%= f.label :name, "Marca" %>
+    <%= f.text_field :name %>
+     <br>
+   <%= cl_image_upload_tag(:image_id) %>
+    <br>
+  <%= f.submit %>
+<% end %>
+<span class="label label-success strong"></span>
+
+<script>
+$(document).ready(function() { 
+$('.cloudinary-fileupload').bind('cloudinarydone', function(e, data) {  
+	
+ $(".label-success").text("Fichero cargado con éxito");
+  return true;
+});
+
+$('.cloudinary-fileupload').bind('fileuploadchange', function() { $(this).hide()});
+
+});
+
+</script>

@@ -6,11 +6,20 @@
     <%= f.label :nom_i_cognoms %>
     <%= f.text_field :name %>
   
+    <%= f.label :cargo, "Cargo castellano" %>
+    <%= f.text_field :carrec %>
+
+    <%= f.label :cargo, "Càrrec català" %>
+    <%= f.text_field :carrecca %>
+
+
     <%= f.label :description, "Descripción castellano" %>
     <%= f.text_area :description, size: '50x9' %>
  
-    <%= f.label :carrec %>
-    <%= f.text_field :carrec %>
+    <%= f.label :description, "Descripció català" %>
+    <%= f.text_area :descriptionca, size: '50x9' %>
+
+
 <br>
     <%= f.file_field :image %>
     <br>

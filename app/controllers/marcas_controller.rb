@@ -9,6 +9,12 @@ class MarcasController < ApplicationController
 
   def create
 	@marca = Marca.new(marca_params)
+	if params[:image_id].present?
+	  preloaded = Cloudinary::PreloadedFile.new(params[:image_id])
+	     # Verify signature by calling preloaded.valid?
+	  @marca.image = preloaded.identifier
+	end
+
 	if @marca.save
         flash[:notice_bootstrap] = "Successfully created servicio."
         redirect_to root_path
@@ -18,7 +24,7 @@ class MarcasController < ApplicationController
   end
 
   def marca_params
-      params.require(:marca).permit(:name, :image)
+      params.require(:marca).permit(:name)
   end
 
 end

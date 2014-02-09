@@ -11,7 +11,7 @@
 <% @servicios.each do |servicio| %>
 <div class="media">
   <a class="pull-left" href="#">
-   <%= image_tag(servicio.image_url.to_s, :class => "media-object") %>
+   <%= cl_image_tag(servicio.image, :class => "media-object") %>
   </a>
   <div class="media-body">
 <% if I18n.locale.to_s == "ca" %>

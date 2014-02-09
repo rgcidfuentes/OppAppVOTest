@@ -14,7 +14,7 @@
   
 <% @marcas.each do |marca| %>
 	<li class="span3">
-		<%= image_tag(marca.image)%>
+		<%= cl_image_tag(marca.image)%>
 	</li>
 <% end %>
 </ul>

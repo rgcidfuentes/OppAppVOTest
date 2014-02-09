@@ -13,7 +13,7 @@
 	<ul class="thumbnails">
   
 <% @marcas.each do |marca| %>
-	<li class="span4">
+	<li class="span3">
 		<%= image_tag(marca.image)%>
 	</li>
 <% end %>

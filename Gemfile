@@ -58,10 +58,12 @@ gem 'bootstrap-datetimepicker-rails'
 gem 'bootswatch-rails'
 gem 'carrierwave'
 
-gem "rmagick"
+#gem "rmagick"
 
 gem 'rails-i18n', '~> 4.0.0'
 
+gem 'cloudinary'
+gem 'newrelic_rpm'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

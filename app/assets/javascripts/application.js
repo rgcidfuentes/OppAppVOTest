@@ -15,4 +15,5 @@
 //= require jquery.ui.all
 //= require bootstrap
 //= require turbolinks
+//= require cloudinary
 //= require_tree .
