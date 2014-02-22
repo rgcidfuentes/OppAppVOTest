@@ -16,10 +16,10 @@
   <div class="media-body">
 <% if I18n.locale.to_s == "ca" %>
 		<h4 class="media-heading"><%= servicio.nameca %></h4>
-		<p><%= servicio.descriptionca.gsub("\n","<br>") %></p>
+		<p><%= servicio.descriptionca.gsub("\n","<br>").html_safe %></p>
 	  <% else%>
 		<h4 class="media-heading"><%= servicio.nameca %></h4>
-		<p><%= servicio.description.gsub("\n","<br>") %></p>
+		<p><%= servicio.description.gsub("\n","<br>").html_safe %></p>
 	  <% end %>
   </div>
 </div>
