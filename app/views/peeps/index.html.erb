@@ -17,10 +17,10 @@
   <div class="media-body">
 	  <% if I18n.locale.to_s == "ca" %>
 		<h4 class="media-heading"><%= peep.carrecca %></h4>
-		<p><%= peep.descriptionca %></p>
+		<p><%= peep.descriptionca.gsub("\n","<br>") %></p>
 	  <% else%>
 		<h4 class="media-heading"><%= peep.carrec %></h4>
-		<p><%= peep.description %></p>
+		<p><%= peep.description.gsub("\n","<br>") %></p>
 	  <% end %>
 
   </div>
