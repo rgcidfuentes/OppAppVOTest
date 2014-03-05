@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140208185651) do
+ActiveRecord::Schema.define(version: 20140305201856) do
 
   create_table "consultas", force: true do |t|
     t.string   "name"
@@ -31,22 +31,22 @@ ActiveRecord::Schema.define(version: 20140208185651) do
 
   create_table "peeps", force: true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "description",   limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image"
     t.string   "carrec"
-    t.string   "descriptionca"
+    t.text     "descriptionca", limit: 255
     t.string   "carrecca"
   end
 
   create_table "servicios", force: true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "description",   limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image"
-    t.string   "descriptionca"
+    t.text     "descriptionca", limit: 255
     t.string   "nameca"
   end
 
