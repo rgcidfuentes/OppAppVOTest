@@ -1,6 +1,6 @@
 module ApplicationHelper
   def full_title(page_title)
-    base_title = "Opticalia VO"
+    base_title = "Opticalia Vila Olímpica"
     if page_title.empty?
       base_title
     else
