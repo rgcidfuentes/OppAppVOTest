@@ -12,8 +12,8 @@ OpticaliaVO::Application.routes.draw do
 	  match '/contacto', to: 'consultas#new', via: 'get'
 	  match '/aviso',   to: 'static_pages#aviso',   via: 'get'
 	  match '/privacidad', to: 'static_pages#privacidad', via: 'get'
-	  match '/signin',  to: 'sessions#new',         via: 'get'
-	  match '/signout', to: 'sessions#destroy',     via: 'delete'
+	  #match '/signin',  to: 'sessions#new',         via: 'get'
+	  #match '/signout', to: 'sessions#destroy',     via: 'delete'
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
