@@ -51,7 +51,7 @@ gem 'route_translator', :github => "enriclluelles/route_translator"
 
 #gem 'bootstrap-sass', '2.3.2.0'
 gem 'bootstrap-sass', '2.3.2.0'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '4.1.0'
 
 gem 'bootstrap-datetimepicker-rails'
 
